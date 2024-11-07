@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --ancho_contenedor_principal: 71rem;
+  --fuente_roboto: "Roboto", sans-serif;
+  --fuente_raleway: "Raleway", sans-serif;
+  --color_secundario: #464646;
+  --color_secundario_efecto: #5f5f5f;
+}
+
+/* !FUENTES GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body{
+  font-family: var(--fuente_roboto);
+}
+
+/* TODO: HEADER - ENCABEZADO ----------------------------------------------------------- */
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: var(--ancho_contenedor_principal);
+  height: 5.5rem;
+  margin: 0 auto;
+}
+
+.header > .header_contenedor_nombre{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  max-width: 8.375rem;
+}
+
+.header_contenedor_nombre > .img_nombre{
+  width: 20%;
+}
+
+.header_contenedor_nombre > .nombre{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header > .header_nav{
+  display: flex;
+  max-width: 40.812rem;
+}
+
+.header_nav > .header_nav_ul{
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.header_nav_ul .nav_ul_item{
+  text-decoration: none;
+  color: var(--color_secundario);
+
+  &:hover{
+    color: var(--color_secundario_efecto);
+    text-shadow: 0 0 30px var(--color_secundario_efecto);
+  }
+}
+
+/* TODO: HERO ----------------------------------------------------------- */
+.hero{
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--ancho_contenedor_principal);
+  height: 23rem;
+  margin: 3rem auto;
+}
+
+.hero > .hero_contenido_info{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  width: 46.93rem;
+}
+
+.hero > .hero_contenido_info > h1{
+  font-size: 2.8rem;
+  font-family: var(--fuente_raleway);
+}
+
+.hero > .hero_contenido_info > .hero_contenido_redes{
+  display: flex;
+  gap: 3rem;
+}
+
+.hero > .hero_contenido_info > .hero_contenido_redes > .contenido_red{
+
+  & a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color_secundario);
+    text-decoration: none;
+
+    &:hover{
+      color: var(--color_secundario_efecto);
+      text-shadow: 0 0 30px var(--color_secundario_efecto);
+    }
+  }
+
+  & img{
+    max-width: 1.5rem;
+  }
+}
+
+.hero > .hero_container_img{
+  min-width: 23rem;
+}
+
+.hero > .hero_container_img > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  flex-shrink: 1;
+}
+
+/* TODO: SOBRE MI ----------------------------------------------------------- */
+.sobreMi{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  max-width: var(--ancho_contenedor_principal);
+  margin: 3rem auto;
+}
+
+.sobreMi > .sobreMi_titulo{
+  font-size: 2rem;
+}
+
+.sobreMi > .sobreMi_parrafo{
+  max-width: 46.93rem;
+  font-family: var(--fuente_raleway);
+  line-height: 1.5rem;
+}
+
+/* TODO: SKILLS ----------------------------------------------------------- */
+.skills{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  max-width: var(--ancho_contenedor_principal);
+  margin: 5.5rem auto;
+}
+
+.skills > .skills_titulo{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.skills > .skills_contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.skills > .skills_contenedor > .skill > .skill_figure{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  width: 11rem;
+}
+
+.skills > .skills_contenedor > .skill .skill_img{
+  width: 1.5rem;
+}
+
+.skills > .skills_contenedor > .skill .skill_nombre{
+  font-weight: bold;
+}
+
+/* TODO: HOBBIES ----------------------------------------------------------- */
+.hobbies{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  max-width: var(--ancho_contenedor_principal);
+  margin: 5.5rem auto;
+}
+
+.hobbies > .hobbies_titulo{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hobbies > .hobbies_contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hobbies > .hobbies_contenedor .hobbie_info{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  width: 11rem;
+}
+
+.hobbies > .hobbies_contenedor .hobbie_info > .hibbie_img{
+  width: 1.5rem;
+}
+
+.hobbies > .hobbies_contenedor .hobbie_info > .hobbie_name{
+  font-weight: bold;
+}
+
+/* TODO: FORMACIÓN ACADÉMICA ----------------------------------------------------------- */
