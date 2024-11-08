@@ -25,7 +25,7 @@
         <li><a class="nav_ul_item" href="#">Hobbies</a></li>
         <li><a class="nav_ul_item" href="#">Formación</a></li>
         <li><a class="nav_ul_item" href="#">Proyectos</a></li>
-        <li><a class="nav_ul_item" href="#">machado-mario@outlook.com</a></li>
+        <li><a class="nav_ul_item item-correo" href="#">machado-mario@outlook.com</a></li>
       </ul>
     </nav>
   </header>
@@ -156,8 +156,138 @@
     </section>
 
     <!-- FORMACIÓN ACADÉMICA ----------------------------------------------------------- -->
+    <section class="formacion">
+      <h2 class="formacion_titulo">Formación académica</h2>
 
+      <article class="formacion_contenido">
+
+        <div class="academia">
+          <figure class="academia_img">
+            <img src="./assets/img/sena_logo.svg" alt="Sena">
+            <figcaption class="academia_titulo">ADSI</figcaption>
+            <figcaption>2015 - Fresno</figcaption>
+          </figure>
+        </div>
+
+        <div class="academia">
+          <figure class="academia_img">
+            <img src="./assets/img/unad_logo.png" alt="UNAD">
+            <figcaption class="academia_titulo">Ingeniería en sistemas</figcaption>
+            <figcaption>2023 - Fresno</figcaption>
+          </figure>
+        </div>
+
+        <div class="academia">
+          <figure class="academia_img">
+            <img src="./assets/img/alura_logo.png" alt="Alura Latam + Oracle">
+            <figcaption class="academia_titulo">Front End</figcaption>
+            <figcaption>2025 - Ibague</figcaption>
+          </figure>
+        </div>
+
+      </article>
+    </section>
+
+    <!-- EXPERIENCIA PROFESIONAL ----------------------------------------------------------- -->
+    <section class="experiencia">
+      <h2>Experiencia Profesional</h2>
+
+      <article class="experiencia_contenedor">
+
+        <!-- Encriptador Texto -->
+        <figure class="experiencia_contenido">
+          <img src="./assets/img/encriptador.png" alt="Encriptado de texto" class="experiencia_contenido-img">
+          <figcaption class="experiencia_info">
+            <h3 class="info_titulo">Encriptado de texto</h3>
+            <p>Challenge Alura Latam</p>
+            <div class="info_botones">
+              <a class="boton" href="https://github.com/MaoMachado/Challeng-Encriptador-de-Texto" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+              <a class="boton boton-demo" href="https://maomachado.github.io/Challeng-Encriptador-de-Texto/"
+                target="_blank" rel="noopener noreferrer">Ver Demo</a>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- JEMA proyectos -->
+        <figure class="experiencia_contenido">
+          <img src="./assets/img/jema.png" alt="Encriptado de texto" class="JEMA Proyecto">
+          <figcaption class="experiencia_info">
+            <h3 class="info_titulo">JEMA Proyectos</h3>
+            <p>Proyecto JEMA</p>
+            <div class="info_botones">
+              <a class="boton" href="https://github.com/MaoMachado/JEMAProyectos" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+              <a class="boton boton-demo" href="https://jema-proyectos.vercel.app/" target="_blank"
+                rel="noopener noreferrer">Ver Demo</a>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Portafolio 1-0 -->
+        <figure class="experiencia_contenido">
+          <img src="./assets/img/portafolio_1.0.png" alt="Portafolio 1.0" class="experiencia_contenido-img">
+          <figcaption class="experiencia_info">
+            <h3 class="info_titulo">Portafolio 1.0</h3>
+            <p>Proyecto Personal</p>
+            <div class="info_botones">
+              <a class="boton" href="https://github.com/MaoMachado/Portafolio" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+              <a class="boton boton-demo" href="https://portafolio-one-peach.vercel.app/index.html" target="_blank"
+                rel="noopener noreferrer">Ver Demo</a>
+            </div>
+          </figcaption>
+        </figure>
+
+      </article>
+    </section>
   </main>
+
+  <!-- CONTACTO ----------------------------------------------------------- -->
+  <section class="contacto">
+
+    <figure class="contacto_figure">
+      <img class="contacto_figure-img" src="./assets/img/telefono.jpg" alt="Telefono">
+    </figure>
+
+    <article class="contacto_info">
+      <h2 class="info_titulo">Contacto</h2>
+      <p>¿Quieres contactarme? <br> Completa el siguiente formulario y me pondré en contacto con usted lo antes posible
+      </p>
+
+      <form class="contacto_form" action="POST">
+        <div class="contacto_form-contenido nombre">
+          <label class="form_label" for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" class="form_input">
+        </div>
+
+        <div class="contacto_form-contenido  email">
+          <label class="form_label" for="email">Email:</label>
+          <input type="email" name="email" id="email" class="form_input">
+        </div>
+
+        <div class="contacto_form-contenido asunto">
+          <label class="form_label" for="asunto">Asunto:</label>
+          <input type="text" name="asunto" id="asunto" class="form_input">
+        </div>
+
+        <div class="contacto_form-contenido mensaje">
+          <label class="form_label" for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" class="form_textarea"></textarea>
+        </div>
+
+        <div class="contacto_form-contenido btn">
+          <input type="button" value="Enviar Mensaje" class="btn_enviar">
+        </div>
+      </form>
+    </article>
+  </section>
+
+  <!-- FOOTER ----------------------------------------------------------- -->
+  <footer>
+    <h2>Desarrollado por <b>Mao Machado</b></h2>
+    <p>2024</p>
+  </footer>
 </body>
 
 </html>
