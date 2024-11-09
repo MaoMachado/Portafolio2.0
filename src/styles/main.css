@@ -596,22 +596,33 @@ footer{
   }
 }
 
-@media (max-width: 26.5625rem) {
+@media (max-width: 375px) {
   h2{
-    font-size: 24px !important;
+    font-size: 1.5rem !important;
   }
 
   .header{
     align-items: flex-end;
+    padding: 0 1rem;
+    height: auto;
+
+    .nombre{
+      font-size: 1rem;
+    }
 
     .header_nav_ul{
       justify-content: flex-end;
+
+      .item-correo{
+        font-size: 0.875rem;
+      }
     }
   }
 
   .hero{
     flex-direction: column-reverse;
     gap: 2rem;
+    padding: 0 1rem;
 
     .hero_contenido_info{
       width: 100%;
@@ -620,9 +631,14 @@ footer{
         font-size: 1.375rem;
       }
 
+      .hero_contenido_redes{
+        gap: 0.3rem;
+        justify-content: space-between;
+      }
+
       .hero_contenido_redes .contenido_red a{
-        justify-content: center;
         gap: 0;
+        font-size: 0.875rem;
 
         & img{
           width: 1rem;
@@ -644,6 +660,26 @@ footer{
     max-width: 9.75rem;
   }
 
+  .sobreMi{
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  .skills{
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+
+  .hobbies{
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+
+  .formacion{
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+
   .formacion .formacion_contenido{
     justify-content: center;
     gap: 1rem;
@@ -651,5 +687,20 @@ footer{
     .academia_img{
       max-width: 100%;
     }
+  }
+
+  .experiencia{
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+
+  .contacto{
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #EAF2FD;
+  }
+
+  footer{
+    font-size: 1rem;
   }
 }
